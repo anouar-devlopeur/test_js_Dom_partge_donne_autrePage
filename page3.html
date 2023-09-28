@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 52%;
+        background-color: cornsilk;
+        margin: 10% auto;
+        padding: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      span {
+        color: #007bff;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Résultats :</h1>
+      <label for="">Nombre 1: <span id="nombre1Span"></span></label><br />
+      <label for="">Nombre 2: <span id="nombre2Span"></span></label><br />
+      <label for="">Opération: <span id="operationSpan"></span></label><br />
+      <label for="">Résultats: <span id="resultatsSpan"></span></label><br />
+      <br />
+      <button onclick="retour()">Retour</button>
+      <button onclick="vider()">Vider</button>
+    </div>
+    <script src="js2.js"></script>
+  </body>
+</html>

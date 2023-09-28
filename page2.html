@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 10%;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #res {
+        font-weight: bold;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label for="nombre1">Nombre 1:</label>
+      <input type="text" id="nb1" name="nombre1" /><br /><br />
+      <label for="nombre2">Nombre 2:</label>
+      <input type="text" id="nb2" name="nombre2" /><br /><br />
+      <input type="radio" name="r" id="add" />+
+      <input type="radio" name="r" id="sous" />-
+      <input type="radio" name="r" id="multi" />*
+      <input type="radio" name="r" id="div" />/ <br /><br />
+      <label for="">Résultat:</label>
+      <span id="res"></span> <br /><br />
+      <button onclick="calculate()">Calculer</button>
+      <button onclick="Result()">Afficher</button>
+      <button onclick="vider()">Vider</button>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
