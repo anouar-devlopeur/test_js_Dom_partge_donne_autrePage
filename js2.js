@@ -22,5 +22,5 @@ function vider(){
     document.getElementById('resultatsSpan').innerHTML = "";
 }
 function retour(){
-    window.location.href = 'page2.html';
+    window.location.href = 'index.html';
 }
